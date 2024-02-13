@@ -1,16 +1,17 @@
-body {
-  background: #8a817c !important;
-}
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+
 .App-header {
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 .App-logo {
-  max-width: 350px;
+  max-width: 250px;
   display: block;
   margin: 0 auto;
 }
 
 .App-footer {text-align: center;
-  margin:20px 0;
+  margin:30px 0;
 }

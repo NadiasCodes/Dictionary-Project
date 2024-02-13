@@ -31,7 +31,7 @@ export default function Dictionary() {
         <input
           type="search"
           onChange={handleKeywordChange}
-          autoFocus={true}
+          className="form"
         ></input>
       </form>
       <Results  results={results}/>

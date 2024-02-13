@@ -1,16 +1,25 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import Photos from "./Photos";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
-  let [loaded, setLoaded] = useState (false);
-  
+  let [loaded, setLoaded] = useState(false);
+  let [photos, setPhotos] = useState("");
+
+  function handleImages(response) {
+    setPhotos(response.data.photos);
+  }
 
   function handleResponse(response) {
     setResults(response.data);
+    const apiKey = "57t510363ca64d76cf8d437ao0eea1eb";
+    let apiUrl = `https://api.shecodes.io/images/v1/search?query=${response.data.word}&key=${apiKey}`;
+    axios
+      .get(apiUrl).then(handleImages);
   }
 
   function handleSubmit(event) {
@@ -26,7 +35,6 @@ export default function Dictionary(props) {
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
-  
   }
 
   function load() {
@@ -38,7 +46,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-        <h1>What word are you looking for?</h1>
+          <h1>What word are you looking for?</h1>
           <form onSubmit={handleSubmit}>
             <input
               type="search"
@@ -53,6 +61,7 @@ export default function Dictionary(props) {
           </div>
         </section>
         <Results results={results} />
+        <Photos photos ={photos}/>
       </div>
     );
   } else {

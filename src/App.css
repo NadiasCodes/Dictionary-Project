@@ -4,16 +4,17 @@ box-sizing: border-box;
 }
 
 body {background-color:#F9F7FE;
-
+  font-family: "Sora", sans-serif;
 
 }
 
 .App-header {
   margin: 10px 0;
+  
 }
-
+ 
 .App-logo {
-  max-width: 250px;
+  max-width: 400px;
   display: block;
   margin: 0 auto;
 }

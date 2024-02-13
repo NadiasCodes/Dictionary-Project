@@ -1,7 +1,9 @@
 
 .Dictionary h1{font-size: 28px;
 font-weight: bold;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+   font-family: "La Belle Aurore", cursive;
+}
 
 .Dictionary section {
   background-color: white;
@@ -21,4 +23,5 @@ margin-bottom: 20px;}
 .Dictionary .hint {
   font-size: 12px;
   margin-top: 5px;
+   
 }

@@ -1,25 +1,28 @@
-*{margin:0;
-padding:0;
-box-sizing: border-box;
-}
-.App{max-width:960px;
-margin:0 auto;}
-body {background-color:#F9F7FE;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Sora", sans-serif;
-
+}
+body {
+  background-color: #efeff0;
 }
 
-.App-header {
-  margin: 10px 0;
-  
-}
- 
-.App-logo {
-  max-width: 400px;
-  display: block;
+.image-header {
+  max-width: 600px;
+  display:block;
   margin: 0 auto;
-}
+  }
 
-.App-footer {text-align: center;
-  margin:30px 0;
+  .coder {font-family: "Dancing Script", cursive;
+  font-size: 27px;
+color:#420484;}
+
+
+
+
+
+.App-footer {
+  text-align: center;
+  margin: 30px 0;
 }

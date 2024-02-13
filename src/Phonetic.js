@@ -1,7 +1,7 @@
 import React from "react";
-import "./Phonetic.css"
+import "./Phonetic.css";
 
-export default function (props) {
+export default function Phonetic (props) {
   if (props.phonetic) {
     return (
       <div className="Phonetic">

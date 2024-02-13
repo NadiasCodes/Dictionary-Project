@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import { RotatingTriangles } from "react-loader-spinner";
 import "./Dictionary.css";
+
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -66,6 +68,16 @@ export default function Dictionary(props) {
     );
   } else {
     load();
-    return "loading";
+    return (
+      <RotatingTriangles
+        visible={true}
+        height="80"
+        width="80"
+        color="#4fa94d"
+        ariaLabel="rotating-triangles-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+    );
   }
 }

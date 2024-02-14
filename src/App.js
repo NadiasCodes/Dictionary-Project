@@ -2,6 +2,11 @@ import Dictionary from "./Dictionary.js";
 import "./App.css";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import { BsGithub } from "react-icons/bs";
+import { BsWindowFullscreen } from "react-icons/bs";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FaReact } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function App() {
   return (
@@ -15,22 +20,49 @@ export default function App() {
               alt="header"
             ></img>
           </h2>
+          <p className="second-title">
+            Made with <FaReact className="ReactIcon" />
+          </p>
         </header>
 
         <main>
           <Dictionary defaultKeyword="Aesthetic" className="main-word" />
         </main>
-        <footer className="App-footer">
-          <p>
-            This project coded by <span className="coder">Nadia Bouli</span>
-          </p>
-          <div>
-            It is open sourced on{" "}
-            <a href="https://github.com/NadiasCodes/dictionary-project">
-              GitHub
-            </a>{" "}
-            & hosted on{" "}
-            <a href="https://dictionary-project-olive.vercel.app/">Vercel</a>{" "}
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/nadia-bouli/"
+            target="blank"
+            className="coder"
+          >
+            Nadia Bouli
+            <br />
+          </a>
+          Hosting & GitHub <br />
+          <br />{" "}
+          <FontAwesomeIcon
+            icon={faArrowDown}
+            bounce
+            style={{ color: "#B197FC" }}
+          />
+          <br />
+          <div class="social-links d-flex justify-content-center mb-5">
+            <a
+              href="https://react-forecast-app.vercel.app/"
+              target="_blank"
+              title="Vercel"
+              rel="noopener noreferrer"
+            >
+              <BsWindowFullscreen className="VercelIcon" />
+            </a>
+            <a
+              href="https://github.com/NadiasCodes"
+              target="_blank"
+              title="GitHub Profile"
+              rel="noopener noreferrer"
+            >
+              <BsGithub className="githubIcon" />
+            </a>
           </div>
         </footer>
       </div>

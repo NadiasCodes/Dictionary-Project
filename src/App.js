@@ -17,12 +17,9 @@ export default function App() {
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/264/original/Designed_by_Nadia_Bouli_%281%29.png?1707846758"
               className="img-fluid image-header"
-              alt="header"
+              alt="custom-header"
             ></img>
           </h2>
-          <p className="second-title">
-            Made with <FaReact className="ReactIcon" />
-          </p>
         </header>
 
         <main>
@@ -38,6 +35,9 @@ export default function App() {
             Nadia Bouli
             <br />
           </a>
+          <p>
+            Made with <FaReact className="ReactIcon" />
+          </p>
           Hosting & GitHub <br />
           <br />{" "}
           <FontAwesomeIcon
@@ -48,7 +48,7 @@ export default function App() {
           <br />
           <div class="social-links d-flex justify-content-center mb-5">
             <a
-              href="https://react-forecast-app.vercel.app/"
+              href="https://dictionary-project-olive.vercel.app/"
               target="_blank"
               title="Vercel"
               rel="noopener noreferrer"
@@ -56,7 +56,7 @@ export default function App() {
               <BsWindowFullscreen className="VercelIcon" />
             </a>
             <a
-              href="https://github.com/NadiasCodes"
+              href="https://github.com/NadiasCodes/dictionary-project"
               target="_blank"
               title="GitHub Profile"
               rel="noopener noreferrer"

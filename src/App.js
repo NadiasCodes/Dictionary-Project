@@ -23,48 +23,9 @@ export default function App() {
         </header>
 
         <main>
-          <Dictionary defaultKeyword="Aesthetic" className="main-word" />
+          <Dictionary defaultKeyword="Plant" className="main-word" />
         </main>
-        <footer>
-          This project was coded by{" "}
-          <a
-            href="https://www.linkedin.com/in/nadia-bouli/"
-            target="blank"
-            className="coder"
-          >
-            Nadia Bouli
-            <br />
-          </a>
-          <p>
-            Made with <FaReact className="ReactIcon" />
-          </p>
-          Hosting & GitHub <br />
-          <br />{" "}
-          <FontAwesomeIcon
-            icon={faArrowDown}
-            bounce
-            style={{ color: "#B197FC" }}
-          />
-          <br />
-          <div class="social-links d-flex justify-content-center mb-5">
-            <a
-              href="https://dictionary-project-olive.vercel.app/"
-              target="_blank"
-              title="Vercel"
-              rel="noopener noreferrer"
-            >
-              <BsWindowFullscreen className="VercelIcon" />
-            </a>
-            <a
-              href="https://github.com/NadiasCodes/dictionary-project"
-              target="_blank"
-              title="GitHub Profile"
-              rel="noopener noreferrer"
-            >
-              <BsGithub className="githubIcon" />
-            </a>
-          </div>
-        </footer>
+        
       </div>
     </div>
   );
